@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap"); /* rubik regular 400 */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"); /* rubik 500 */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"); /* rubik 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap"); /* ranchers 400 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-font-style: "Rubik", sans-serif;
+  --secondary-font-style: "Ranchers", cursive;
+  --primary-color: #4f5665;
+  --secondary-color: #ba55d3;
+}
+
+body,
+html {
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: var(--primary-font-style);
+  color: var(--primary-color);
+}
