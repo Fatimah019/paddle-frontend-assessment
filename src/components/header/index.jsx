@@ -35,9 +35,9 @@ const Header = () => {
       </nav>
       <NavBar>
         {!showNav ? (
-          <FaBars onClick={handleShowNav} />
+          <FaBars onClick={handleShowNav} className="nav_bar_icons" />
         ) : (
-          <AiOutlineClose onClick={handleHideNav} />
+          <AiOutlineClose onClick={handleHideNav} className="nav_bar_icons" />
         )}
       </NavBar>
     </HeaderWrapper>
@@ -51,12 +51,12 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0rem;
+  padding: 2rem 10%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 80%;
+  width: 100%;
   margin: auto;
   z-index: 9999;
 
@@ -84,6 +84,10 @@ const HeaderWrapper = styled.header`
         align-items: flex-start;
       }
     }
+  }
+
+  .nav_bar_icons {
+    font-size: 1.5rem;
   }
 `;
 

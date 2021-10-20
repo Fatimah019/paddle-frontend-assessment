@@ -55,7 +55,6 @@ const Customers = () => {
 export default Customers;
 const CustomerContainer = styled.div`
   position: relative;
-  padding: 2rem 0rem;
 `;
 
 const CustomerInner = styled.div``;
@@ -63,7 +62,7 @@ const CustomerInner = styled.div``;
 const CustomerHeader = styled.div`
   width: 60%;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0rem auto;
 
   h2 {
     font-weight: 500;
@@ -73,5 +72,5 @@ const CustomerHeader = styled.div`
 
 const CustomerSlide = styled.div`
   width: 90%;
-  margin: 2rem 0 2rem auto;
+  margin: 3rem 0 3rem auto;
 `;

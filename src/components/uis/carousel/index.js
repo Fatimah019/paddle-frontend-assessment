@@ -1,6 +1,53 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/all";
+import styled from "styled-components";
+
+const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+  const {
+    carouselState: { currentSlide },
+  } = rest;
+  return (
+    <SlideControls>
+      <div className="carousel-button-group" style={{ margin: "2.5rem 0rem" }}>
+        <AiOutlineArrowLeft
+          className={currentSlide === 0 ? "disable" : ""}
+          onClick={() => previous()}
+          style={{
+            height: "3rem",
+            width: "3rem",
+            padding: "0.4rem",
+            borderRadius: "50%",
+            color: "var(--secondary-color)",
+            marginRight: "1rem",
+            border: "3px solid var(--secondary-color)",
+          }}
+        />
+
+        <AiOutlineArrowRight
+          style={{
+            height: "3rem",
+            width: "3rem",
+            padding: "0.4rem",
+            borderRadius: "50%",
+            border: "3px solid var(--secondary-color)",
+            backgroundColor: "var(--secondary-color)",
+            color: "#fff",
+          }}
+          onClick={() => next()}
+        />
+      </div>
+    </SlideControls>
+  );
+};
+
+const SlideControls = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0rem 3rem;
+`;
 
 const CustomCarousel = ({ carousel_items }) => {
   const responsive = {
@@ -22,31 +69,15 @@ const CustomCarousel = ({ carousel_items }) => {
     },
   };
   return (
-    <Carousel responsive={responsive}>
+    <Carousel
+      responsive={responsive}
+      arrows={false}
+      renderButtonGroupOutside={true}
+      customButtonGroup={<ButtonGroup />}
+    >
       {carousel_items.map((item, index) => (
         <div key={index}>{item}</div>
       ))}
-      {/* <div>
-        <img
-          src="/assets/images/hero-bg.png"
-          alt=""
-          style={{ width: "100%" }}
-        />
-      </div>
-      <div>
-        <img
-          src="/assets/images/hero-bg.png"
-          alt=""
-          style={{ width: "100%" }}
-        />
-      </div>
-      <div>
-        <img
-          src="/assets/images/hero-bg.png"
-          alt=""
-          style={{ width: "100%" }}
-        />
-      </div> */}
     </Carousel>
   );
 };

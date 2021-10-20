@@ -58,15 +58,15 @@ const Plan = () => {
 export default Plan;
 
 const PlanMain = styled.div`
-  padding: 3rem 0rem;
+  padding: 0rem 0rem;
 `;
 const PlanHeader = styled.div`
   width: 60%;
-  margin: 2rem auto;
+  margin: 0rem auto 2rem auto;
   text-align: center;
 
   h2 {
-    font-weight: 500;
+    font-weight: 800;
     color: #0b132a;
   }
   p {

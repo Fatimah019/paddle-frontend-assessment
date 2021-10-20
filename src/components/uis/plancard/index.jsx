@@ -55,7 +55,7 @@ export default PlanCard;
 const CardContainer = styled.div`
   background: #ffffff;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,6 +82,7 @@ const CardContainer = styled.div`
       content: "✔ ";
       color: #2fab73;
       padding-right: 0.5rem;
+      font-size: 1rem;
     }
   }
 
@@ -94,10 +95,11 @@ const CardContainer = styled.div`
       justify-content: center;
     }
     button {
-      padding: 0.5rem 2rem;
+      padding: 1rem 4rem;
       outline: none;
       margin-top: 1rem;
       border-radius: 4px;
+      font-weight: 800;
       border: 3px solid var(--secondary-color);
     }
     .inactive_plan {
@@ -106,6 +108,7 @@ const CardContainer = styled.div`
     }
     .active_plan {
       background-color: var(--secondary-color);
+      box-shadow: 10px 10px 25px 5px rgba(186, 85, 211, 0.35);
       color: #fff;
     }
   }

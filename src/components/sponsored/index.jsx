@@ -26,8 +26,7 @@ export default Sponsored;
 
 const SponsoredContainer = styled.div`
   width: 80%;
-  margin: auto;
-  margin-top: 5rem;
+  margin: 4rem auto;
 `;
 const SponsoredContainerHeader = styled.div`
   width: 70%;
@@ -35,7 +34,7 @@ const SponsoredContainerHeader = styled.div`
   text-align: center;
 
   h2 {
-    font-weight: 500;
+    font-weight: 800;
   }
   p {
     margin: 1rem 0rem;
@@ -43,10 +42,12 @@ const SponsoredContainerHeader = styled.div`
   button {
     color: #fff;
     background-color: var(--secondary-color);
-    padding: 0.5rem 2rem;
+    box-shadow: 10px 10px 25px 5px rgba(186, 85, 211, 0.35);
+    padding: 1rem 4rem;
     outline: none;
     border: none;
     border-radius: 4px;
+    font-weight: 500;
   }
 `;
 
