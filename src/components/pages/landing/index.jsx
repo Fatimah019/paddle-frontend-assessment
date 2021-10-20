@@ -3,6 +3,7 @@ import Hero from "../../hero";
 import Plan from "../../planType";
 import Sponsored from "../../sponsored";
 import Footer from "../../footer";
+import Customers from "../../customers";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Hero />
       <Plan />
       <Sponsored />
+      <Customers />
       <Footer />
     </>
   );

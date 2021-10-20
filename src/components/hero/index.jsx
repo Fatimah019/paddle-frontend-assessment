@@ -179,7 +179,7 @@ const HeroMiddle = styled.div`
 `;
 
 const HeroBottom = styled.div`
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
   column-gap: 1rem;

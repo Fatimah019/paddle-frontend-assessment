@@ -48,7 +48,8 @@ export default Footer;
 
 const FooterContainer = styled.footer`
   background-color: #f8f8f8;
-  padding: 3rem 0rem;
+  padding: 4rem 0rem 3rem 0rem;
+  position: relative;
 `;
 const FooterInner = styled.div`
   width: 80%;
