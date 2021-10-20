@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { AiFillStar } from "react-icons/all";
 
 const SlideCard = ({
   active_card,
@@ -27,7 +28,9 @@ const SlideCard = ({
           </div>
         </div>
         <div className="card_header_right">
-          <p>{star_point} icon</p>
+          <p>
+            {star_point} <AiFillStar color="#FEA250" />
+          </p>
         </div>
       </CardHeader>
       {card_body && <blockquote>{card_body_text}</blockquote>}

@@ -124,7 +124,7 @@ const HeroTopRight = styled.div`
 `;
 
 const HeroMiddle = styled.div`
-  margin-top: 5rem;
+  margin-top: 2rem;
   background: #ffffff;
   border-radius: 10px;
   padding: 3rem 0rem;
