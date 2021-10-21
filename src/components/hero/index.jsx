@@ -98,12 +98,13 @@ const HeroTopLeft = styled.div`
     font-family: var(--primary-font-style);
     color: #0b132a;
     text-shadow: 0px 2px 4px var(--secondary-color);
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 
   p {
     margin: 2rem 0rem 2.5rem 0rem;
   }
+
   a {
     color: #fff;
     border-radius: 4px;

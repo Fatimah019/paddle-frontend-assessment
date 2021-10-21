@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CustomCarousel from "../uis/carousel";
 import SlideCard from "../uis/slidecard";
+import Subscribe from "../subscribe";
 
 const Customers = () => {
   return (
@@ -48,6 +49,7 @@ const Customers = () => {
           />
         </CustomerSlide>
       </CustomerInner>
+      <Subscribe />
     </CustomerContainer>
   );
 };

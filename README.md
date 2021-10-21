@@ -1,1 +1,3 @@
-# paddle-frontend-assessment
+In the project directory, you can run:
+
+### `yarn start`

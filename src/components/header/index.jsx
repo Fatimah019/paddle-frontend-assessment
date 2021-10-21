@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import { FaBars, AiOutlineClose } from "react-icons/all";
 
 const Header = () => {
@@ -22,10 +23,26 @@ const Header = () => {
       <nav className="nav_list" style={style}>
         <div className="nav_inner">
           <HeaderList>
-            <li>About</li>
-            <li>FAQS</li>
-            <li>Pricing</li>
-            <li>Testimonials</li>
+            <li>
+              <NavLink to="/about" className="nav_link">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/faqs" className="nav_link">
+                FAQS
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/pricing" className="nav_link">
+                Pricing
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/testimonials" className="nav_link">
+                Testimonials
+              </NavLink>
+            </li>
           </HeaderList>
           <HeaderRight>
             <button>Sign in</button>
@@ -116,12 +133,15 @@ const HeaderList = styled.ul`
   }
 
   li {
-    color: var(--primary-color);
-    font-family: "Rubik", sans-serif;
     margin: 0 1rem;
     @media screen and (max-width: 900px) {
       color: #fff;
       margin: 0;
+    }
+    .nav_link {
+      color: var(--primary-color);
+      font-family: "Rubik", sans-serif;
+      text-decoration: none;
     }
   }
 `;

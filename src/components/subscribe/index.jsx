@@ -22,6 +22,7 @@ const SubscribeContainer = styled.div`
   border-radius: 10px;
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
   padding: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,8 @@ const SubscribeContainer = styled.div`
   position: absolute;
   left: 0;
   right: 0;
-  height: 50%;
+  top: 90%;
+  height: 10rem;
   z-index: 9999;
   @media screen and (max-width: 600px) {
     display: none;

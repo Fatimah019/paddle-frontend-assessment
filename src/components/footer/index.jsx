@@ -48,8 +48,12 @@ export default Footer;
 
 const FooterContainer = styled.footer`
   background-color: #f8f8f8;
-  padding: 4rem 0rem 3rem 0rem;
+  padding: 8rem 0rem 3rem 0rem;
   position: relative;
+
+  @media screen and (max-width: 600px) {
+    padding: 4rem 0rem 3rem 0rem;
+  }
 `;
 const FooterInner = styled.div`
   width: 80%;
@@ -105,5 +109,6 @@ const FooterInner = styled.div`
   }
   .copyright_text {
     color: #afb5c0;
+    margin-top: 1.5rem;
   }
 `;

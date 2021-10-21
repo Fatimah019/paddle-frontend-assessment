@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { apiCallBegan } from "../../actions";
 
 let githubUserSlice = createSlice({
-  name: "githubUser",
+  name: "user",
   initialState: {
     user: null,
     loading: false,
@@ -28,10 +28,9 @@ const { githubUserFetchSuccess, githubUserFetchStart, githubUserFetchFailed } =
 
 export default githubUserSlice.reducer;
 
-export const fetchGithubUser = (query, sort) =>
+export const fetchGithubUser = (query, sort, order) =>
   apiCallBegan({
-    // url: `/search/repositories?q=${query}&sort=${sort}`,
-    url: `/search/repositories?${query}&sort=${sort}`,
+    url: `/search/repositories?q=${query}&sort=${sort}&order=${order}`,
     method: "GET",
     onSuccess: githubUserFetchSuccess.type,
     onStart: githubUserFetchStart.type,
@@ -39,4 +38,4 @@ export const fetchGithubUser = (query, sort) =>
   });
 
 //   selectors
-export const getUser = (state) => state.githubUser.user;
+export const getUser = (state) => state.githubUser;
