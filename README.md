@@ -40,4 +40,4 @@ only functions required to interact with the store are exported
 
 ## Branches
 
-- main -&gt; this is what's running in production
+- main -&gt; this is what's running in production and can be found in (https://paddle-frontend-assessment-davies.vercel.app/)
